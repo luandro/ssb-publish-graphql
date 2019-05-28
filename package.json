@@ -1,0 +1,29 @@
+{
+  "name": "ssb-publish-graphql",
+  "version": "1.0.0",
+  "description": "Secure Scuttlebot publish mutations for Open App GraphQL Server",
+  "main": "index.js",
+  "scripts": {
+    "push": "git push origin master && git push --tags ssb master",
+    "test": "node ./test/index.test.js | tap-spec"
+  },
+  "keywords": [
+    "ssb",
+    "graphql",
+    "open-app"
+  ],
+  "author": "Luandro <luandro@gmail.com>",
+  "repository": {
+    "url": "https://github.com/luandro/ssb-publish-graphql"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "pull-stream": "^3.6.9",
+    "ssb-ref": "^2.13.1"
+  },
+  "devDependencies": {
+    "node-fetch": "^2.2.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  }
+}
